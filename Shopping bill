@@ -1,0 +1,28 @@
+T shirt=200
+shirt=100
+Shorts=300
+print('*****Welcome to python shopping')
+cname=input('Enter customer name:')
+cphno=int(input('Enter Phno:'))
+T shirt=int(input('Enter no of T shirt: '))#2
+shirt=int(input('Enter no of shirts : '))#2
+Shorts=int(input('Enter no of shorts : '))#0
+bill=(T shirt*T shirts)+(shirt*shirts)+(Shorts*Shorts)
+if bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*12/100
+obill=tbill+gst
+print('customer name:',cname)
+print('customer phno:',cphno)
+print('bill:',bill)
+print('Discount:',disc)
+print('Gst 12%:',gst)
+print('Bill to be paid:',obill)
+print('**Thank you!Visit Again***')
