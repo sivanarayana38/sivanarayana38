@@ -1,0 +1,7 @@
+year=int(input("Enter a year"))
+if year%4==0 and year%100:
+    print("Given year is LEAP YEAR")
+elif year%400==0:
+    print("Given year is LEAP YEAR")
+else:
+     print("Given year is NOT LEAP YEAR")
