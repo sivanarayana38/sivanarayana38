@@ -1,0 +1,15 @@
+def diagonalDifference(arr):
+    # Write your code here
+    l=len(arr)
+    psum=0
+    ssum=0
+    for i in range(0,l):
+        for j in range(0,l):
+            if(i==j):
+                psum=psum+arr[i][j]
+    for i in range(0,n):
+        for j in range(0,n):
+            if(i+j==n-1):
+                ssum=ssum+arr[i][j]
+    res=abs(psum-ssum)
+    return res
