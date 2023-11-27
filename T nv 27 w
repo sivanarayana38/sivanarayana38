@@ -1,0 +1,15 @@
+class Solution(object):
+    def diagonalSum(self, mat):
+        psum=0
+        ssum=0
+        l=len(mat)
+        for i in range(0,l):
+            for j in range(0,l):
+                if(i==j):
+                    psum=psum+mat[i][j]
+        for i in range(0,l):
+            for j in range(0,l):
+                if(i+j==l-1 and i!=j):
+                    ssum=ssum+mat[i][j]
+        res=psum+ssum
+        return res
